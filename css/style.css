@@ -1,0 +1,25 @@
+body{
+  background-color:"#ffffff";
+}
+/* здесь будет ссылка на изображение для иконки закладкок
+ul.bookmarks{
+  list-style-image: url();
+}
+*/
+ul.main-menu, ul.footer-top-menu, ul.footer-up-menu{
+  list-style-type: none;
+}
+
+ul.main-menu li, ul.footer-top-menu li, ul.footer-up-menu li{
+  display: inline-block;
+}
+
+.circle {
+      width: 40px;
+      height: 40px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      background: #212a3a;
+      display: inline-block;
+    }
