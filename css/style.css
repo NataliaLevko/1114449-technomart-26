@@ -1,17 +1,45 @@
-body{
-  background-color:"#ffffff";
+body {
+  background-color: #ffffff;
+  font-family:PT Sans, Cuprum;
 }
 /* здесь будет ссылка на изображение для иконки закладкок
 ul.bookmarks{
   list-style-image: url();
 }
 */
-ul.main-menu, ul.footer-top-menu, ul.footer-up-menu{
+.logo{
+background-image: url(../img/red_block.png);
+position: absolute;
+left: 130px;
+top: -4px;
+width: 220px;
+height: 51px;
+z-index: 228;
+}
+
+.main_logo img{
+  display: block;
+}
+
+ul.main_menu, ul.footer_top_menu, ul.footer_up_menu{
   list-style-type: none;
 }
 
-ul.main-menu li, ul.footer-top-menu li, ul.footer-up-menu li{
+ul.main_menu li, ul.footer_top_menu li, ul.footer_up_menu li{
   display: inline-block;
+}
+
+a.button_red{
+  display: inline-block;
+  width: 220px;
+  height: 38px;
+  background-color: #ee3643;
+  border-color: #ee3643;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .circle {
@@ -23,3 +51,8 @@ ul.main-menu li, ul.footer-top-menu li, ul.footer-up-menu li{
       background: #212a3a;
       display: inline-block;
     }
+
+    
+    #link a:link{color: #ffd180; text-decoration: none;}
+    #link a:hover{color: #ffd180; text-decoration: underline;}
+    #link a:active{color: #ee3643; text-decoration: underline;}

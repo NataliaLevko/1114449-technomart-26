@@ -7,10 +7,13 @@
   </head>
   <body>
       <header>
-         <h1 hidden>Техномарт</h1>
-         <div class="upper-container">  <!--этот div создала для того чтобы сделать box серого цвета, в который входит вся шапка сайта -->
+        <div class="header_top">
+           <div class="container">
+             <h1 hidden>Техномарт</h1>
              <div class="logo">
-                <a href="index.html">Техномарт</a>
+                <a href="index.html" class="main_logo">
+                  <img src="img/logo_technomart.png" title="Логотип Техномарт" alt="Логотип Техномарт"/>
+                </a>
              </div>
              <input type="search" placeholder="Поиск"></input>
              <ul class="bookmarks">  <!-- сделала  список, так как хочу задать иконку в качестве маркера списка, тоже самое для корзины,войти, телефона-->
@@ -20,38 +23,43 @@
                <li>
                   <a href="basket.html">Корзина:0</a>
               </li>
-           </ul>
-           <a class="order" href="order.html">Оформить заказ</a> <!--задала класс для ссылки, потому что в css будут псевдоклассы для этой ссылки -->
-         </div>
-      <div class="discription">   <!-- обернула параграф в div, чтобы иметь возможность задать параметры области для текстового контейнера-->
-         <p>
-               Интернет-магазин<br />
-               строительных материалов<br />
-               и инструментов для ремонта
-         </p>
-      </div>
-         <ul class="phone">
-            <li>
-               <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-            </li>
-         </ul>
-         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
-         <ul class="input">
-           <li><a href="#">Войти</a></li>
-         </ul>
-         <a href="#">Регистрация</a>
+            </ul>
+            <a class="order" href="order.html">Оформить заказ</a> <!--задала класс для ссылки, потому что в css будут псевдоклассы для этой ссылки -->
+          </div>
+        </div>
 
-         <nav class="main-menu">
-           <ul class="main-menu">
-             <li><a href="index.html">Главная</a></li>
-             <li><a href="company.html">Компания</a></li>
-             <li><a href="catalog.html">Каталог</a></li>
-             <li><a href="news.html">Новости</a></li>
-             <li><a href="offers.html">Спецпредложения</a></li>
-             <li><a href="delivery.html">Доставка</a></li>
-             <li><a href="contacts.html">Контакты</a></li>
-           </ul>
-         </nav>
+
+       <div class="header_bottom">
+         <div class="container">
+            <p>
+                  Интернет-магазин<br />
+                  строительных материалов<br />
+                  и инструментов для ремонта
+            </p>
+            <ul class="phone">
+              <li>
+                 <a href="tel:+78125550555"><!--<img src="img/icon-phone.svg">-->+7 (812) 555-05-55</a>
+              </li>
+            </ul>
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
+            <ul class="input">
+               <li><a href="#">Войти</a></li>
+            </ul>
+            <a href="#">Регистрация</a>
+
+            <nav class="main_menu">
+              <ul class="main_menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="company.html">Компания</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="offers.html">Спецпредложения</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+               </ul>
+             </nav>
+          </div>
+        </div>
       </header>
       <main>
         <!--здесь будет основное уникальное содержимое страницы -->
@@ -71,7 +79,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a href="company.html">ПОДРОБНЕЕ О КОМПАНИИ </a>
+        <a href="company.html" class="button_red">ПОДРОБНЕЕ О КОМПАНИИ </a>
       </section>
 
       <section>
@@ -85,11 +93,11 @@
       </section>
 
       <footer>
-          <div class="grey-container">
+          <div class="grey_container">
              <div class="logo">
                 <a href="index.html">Техномарт</a>
              </div>
-             <ul class="footer-top-menu">
+             <ul class="footer_top_menu">
                 <li><a href="company.html">Компания</a></li>
                 <li><a href="news.html">Новости</a></li>
                 <li><a href="catalog.html">Каталог</a></li>
@@ -100,19 +108,19 @@
                   г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8<br/>
                   +7 (812) 555-05-55
             </p>
-            <ul class="footer-up-menu">
+            <ul class="footer_up_menu">
                <li><a href="">Материалы</a></li><!-- не знаю, какие адреса страниц ставить траслитерацией или английские названия. Как будет лучше с точки зрения SEO...-->
                <li><a href="">Техника</a></li>
                <li><a href="">Инструмент</a></li>
                <li><a href="offers.html">Спецпредложения</a></li>
             </ul>
         </div>
-        <div class="dark-grey-container">
+        <div class="dark_grey_container">
             <p>
               © 2010-2017 Компания "Техномарт"<br />
               Все права защищены
             </p>
-            <article class="social-icon">
+            <article class="social_icon">
               <!-- Думала попробовать вставить круги для иконок с помощью svg, круги вставила, но не очень понятно как наложить изображение иконки поверх и чтобы оно не поехало при отображении в разных браузерах. От идеи пока не отказалась,не знаю как именно это сделать cредствами одного css, без js
               <svg>
                <a href="http://vk.com/club" rel="nofollow "target="_blank"><circle r=15 cx=150 cy=30 fill="#212a3a"/></a>
@@ -121,26 +129,26 @@
              </svg>
            -->
               <div class="circle">
-                <a title="Vk" href="http://vk.com/club" rel="nofollow "target="_blank"><img src="vk.png" alt="vk"></a>
+                <a title="Vk" href="http://vk.com/club" rel="nofollow noreferrer noopener" target="_blank"><img src="vk.png" alt="vk"></a>
               </div><!-- сами изображения иконок не умею пока правильно выгрузить из смарт объектов дизайна в формат, поддерживающий прозрачность, в данном случае png-->
 
               <div class="circle">
-                <a title="Facebook" href="https://facebook.com/group/" rel="nofollow "target="_blank"><img src="fb.png" alt="fb"></a>
+                <a title="Facebook" href="https://facebook.com/group/" rel="nofollow noreferrer noopener" target="_blank"><img src="fb.png" alt="fb"></a>
               </div>
 
               <div class="circle">
-                <a title="Instagram" href="https://instagram.com/" rel="nofollow "target="_blank"><img src="inst.png" alt="inst"></a>
+                <a title="Instagram" href="https://instagram.com/" rel="nofollow noreferrer noopener" target="_blank"><img src="inst.png" alt="inst"></a>
               </div>
             </article>
             <div class="feedback">
-               <p>  Обратная связь:<br />
-                    <a href="mailto:mail@htmlacademy.ru?subject=feedback">mail@htmlacademy.ru</a>
+               <p>  Обратная связь:
+                    <a href="mailto:mail@htmlacademy.ru?subject=feedback" id="link">mail@htmlacademy.ru</a>
                </p>
             </div>
             <div class="develop">
               <p>
-                  Разработано-<br />
-                  htmlacademy.ru
+                  Разработано-
+                  <a href="https://htmlacademy.ru/intensive/htmlcss" id="link">htmlacademy.ru</a>
               </p>
           </div>
       </footer>
