@@ -4,11 +4,18 @@ background-color: #ffffff;
 font-family: PT Sans, Cuprum, sans-serif;
 margin: 0px;
 padding: 0px;
+
 }
 
 a {
   text-decoration: none;
 }
+
+.visually-hidden {
+
+  visibility: hidden;
+}
+
 .logo {
 
 background-image: url(../img/red_block.png);
@@ -25,6 +32,50 @@ z-index: 228;
 
 display: block;
 
+}
+
+.ul_wrap {
+  list-style-type: none;
+}
+
+.account {
+  list-style-type: none;
+}
+
+.main_menu {
+  list-style-type: none;
+}
+
+
+button[name="look"] {
+  background-color: #ffffff;
+  border-color: #e5e5e5;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+
+.new_price {
+
+  background: url(../img/new_price.svg) no-repeat;
+
+}
+
+.price {
+  color: #999999;  /* цвет зачеркивающей линии */
+  text-decoration: line-through;
+  text-transform: uppercase;
+  font-weight:normal;
+}
+
+.price span {
+  color: #999999;
+  font-weight: bold;
+
+}
+
+.items_list {
+  list-style-type: none;
 }
 
 .describe {
@@ -47,6 +98,7 @@ color: #EE3643;
 }
 
 .main_menu,
+.type_sort,
 .footer_top_menu,
 .footer_up_menu {
 
@@ -55,6 +107,9 @@ list-style-type: none;
 }
 
 .main_menu li,
+.catalog_nav li,
+.items_list li,
+.type_sort li,
 .footer_top_menu li,
 .footer_up_menu li {
 
@@ -128,177 +183,3 @@ input[name="text"] {
  width: 460px;
  height: 114px;
 }
-
-/*
-.write_us {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1200px;
-  height: 3151px;
-  z-index: 247;
-}
-.Ваше_имя: {
-  font-size: 5px;
-  font-family: "Cuprum";
-  color: rgb(0, 0, 0);
-  line-height: 1;
-  text-align: left;
-  -moz-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -webkit-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -ms-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  position: absolute;
-  left: 396.577px;
-  top: 2578.933px;
-  z-index: 245;
-}
-.Имя_Фамилия {
-  font-size: 3.709px;
-  font-family: "PT Sans";
-  color: rgb(169, 169, 169);
-  line-height: 1.384;
-  text-align: left;
-  -moz-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -webkit-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -ms-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  position: absolute;
-  left: 413.662px;
-  top: 2616.933px;
-  z-index: 244;
-}
-.Layer_5_copy_17 {
-  background-image: url("Layer 5 copy 17.png");
-  position: absolute;
-  left: 366px;
-  top: 2597px;
-  width: 228px;
-  height: 46px;
-  z-index: 243;
-}
-.Ваш_e_mail: {
-  font-size: 5px;
-  font-family: "Cuprum";
-  color: rgb(0, 0, 0);
-  line-height: 1;
-  text-align: left;
-  -moz-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -webkit-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -ms-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  position: absolute;
-  left: 639.037px;
-  top: 2578.933px;
-  z-index: 242;
-}
-.email_example_com {
-  font-size: 3.709px;
-  font-family: "PT Sans";
-  color: rgb(169, 169, 169);
-  line-height: 1.384;
-  text-align: left;
-  -moz-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -webkit-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -ms-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  position: absolute;
-  left: 668px;
-  top: 2623.294px;
-  z-index: 241;
-}
-.Layer_5_copy_18 {
-  background-image: url("Layer 5 copy 18.png");
-  position: absolute;
-  left: 606px;
-  top: 2597px;
-  width: 228px;
-  height: 46px;
-  z-index: 240;
-}
-.Текст_письма: {
-  font-size: 5px;
-  font-family: "Cuprum";
-  color: rgb(0, 0, 0);
-  line-height: 1;
-  text-align: left;
-  -moz-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -webkit-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -ms-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  position: absolute;
-  left: 404.375px;
-  top: 2664.933px;
-  z-index: 239;
-}
-.В_свободной_форме {
-  font-size: 3.709px;
-  font-family: "PT Sans";
-  color: rgb(169, 169, 169);
-  line-height: 1.384;
-  text-align: left;
-  -moz-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -webkit-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -ms-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  position: absolute;
-  left: 426.126px;
-  top: 2708.825px;
-  z-index: 238;
-}
-.Layer_5_copy_21 {
-  background-image: url("Layer 5 copy 21.png");
-  position: absolute;
-  left: 366px;
-  top: 2683px;
-  width: 468px;
-  height: 122px;
-  z-index: 237;
-}
-.ОТПРАВИТЬ {
-  font-size: 4px;
-  font-family: "Cuprum";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 1.286;
-  text-align: center;
-  -moz-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -webkit-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  -ms-transform: matrix( 3.50541372649093,0,0,3.50541372649093,0,0);
-  position: absolute;
-  left: 590.593px;
-  top: 2891.432px;
-  z-index: 236;
-}
-.send_btn {
-  background-image: url("send btn.png");
-  position: absolute;
-  left: 370px;
-  top: 2875px;
-  width: 460px;
-  height: 38px;
-  z-index: 235;
-}
-.Layer_124_copy {
-  background-image: url("Layer 124 copy.png");
-  position: absolute;
-  left: 290px;
-  top: 2838px;
-  width: 620px;
-  height: 112px;
-  z-index: 234;
-}
-.Layer_124 {
-  background-image: url("Layer 124.png");
-  position: absolute;
-  left: 290px;
-  top: 2520px;
-  width: 620px;
-  height: 7px;
-  z-index: 233;
-}
-.Layer_36 {
-  background-image: url("Layer 36.png");
-  position: absolute;
-  left: 251px;
-  top: 2501px;
-  width: 699px;
-  height: 509px;
-  z-index: 232;
-}
-
-*/
