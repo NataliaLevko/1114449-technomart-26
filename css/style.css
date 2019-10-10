@@ -1,15 +1,95 @@
 body {
-
 background-color: #ffffff;
-font-family: PT Sans, Cuprum, sans-serif;
+font: 17px "PT Sans", "Cuprum", sans-serif;
 margin: 0px;
 padding: 0px;
+max-width: 1200px;
+height: 100vh;;
+}
 
+h2 {
+  font: 30px/30px "Cuprum", sans-serif;
+  text-transform: uppercase;
 }
 
 a {
   text-decoration: none;
 }
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background-color: #f4f7f9;
+  width: 100%;
+}
+
+.header_top  {
+  width: 100%;
+  background-color: #293449;
+}
+
+.header_top .container {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  width: 940px;
+  margin: 80px 130px 86px;
+}
+
+
+.breadcrumbs {
+  display:inline-flex;
+  height: 60px;
+}
+
+.breadcrumbs li a {
+  justify-content: space-between;
+}
+
+.company {
+  justify-content: flex-start;
+  width: 540px;
+}
+
+.company p,
+.contacts p {
+  font: 13px/24px "PT Sans";
+  justify-content: flex-start;
+}
+
+.contacts {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav .main_menu {
+  width: 940px;
+  height: 55px;
+  border-bottom: 5px solid #293449;
+  margin-right: 130px;
+  margin-left: 130px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #32425c;
+  font: 17px/17px "Cuprum";
+}
+
+.main_menu li a {
+  color: #FFFFFF;
+}
+
+
 
 .visually-hidden {
 
@@ -31,25 +111,17 @@ left: 130px;
 top: -4px;
 width: 220px;
 height: 51px;
-z-index: 228;
+}
 
+.paginator {
+ display:inline-flex;
 }
 
 .main_logo img {
 
-display: block;
+display: flex;
 
 }
-
-.ul_wrap {
-  list-style-type: none;
-}
-
-
-.main_menu {
-  list-style-type: none;
-}
-
 
 button[name="look"] {
   background-color: #ffffff;
@@ -65,22 +137,13 @@ button[name="look"] {
 
 }
 
-.price {
+.old_price {
   color: #999999;  /* цвет зачеркивающей линии */
   text-decoration: line-through;
   text-transform: uppercase;
   font-weight:normal;
 }
 
-.price span {
-  color: #999999;
-  font-weight: bold;
-
-}
-
-.items_list {
-  list-style-type: none;
-}
 
 .describe {
 width: 226px;
@@ -101,14 +164,7 @@ color: #EE3643;
 
 }
 
-.main_menu,
-.type_sort,
-.footer_top_menu,
-.footer_up_menu {
 
-list-style-type: none;
-
-}
 
 .main_menu li,
 .catalog_nav li,
@@ -117,24 +173,27 @@ list-style-type: none;
 .footer_top_menu li,
 .footer_up_menu li {
 
-display: inline-block;
+display: inline-flex;
 
 }
 
-.button {
+.red_radius {
 
-  display: flex;
-  width: 220px;
-  height: 38px;
   background-color: #ee3643;
   border-color: #ee3643;
-  align-items: center;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1%;
   text-align: center;
   text-decoration: none;
   user-select: none;
   font-size: 14px;
   color: #ffffff;
 
+}
+
+.contacts img {
+  margin: 40px 0px;;
 }
 
 .circle {
@@ -145,7 +204,7 @@ display: inline-block;
   -moz-border-radius: 20px;
   border-radius: 20px;
   background: #212a3a;
-  display: inline-block;
+  display: inline-flex;
 
 }
 
@@ -186,4 +245,48 @@ div label input {
 input[name="text"] {
  width: 460px;
  height: 114px;
+}
+
+.footer_grey {
+  width: 100%;
+  background-color: #32425c;
+  font: 18px/24px "Cuprum", sans-serif;
+}
+
+.footer_grey .container {
+  display: flex;
+  margin: 0px 130px;
+}
+
+.footer_dark_grey {
+  width: 100%;
+  background-color: #293449;
+  font: 16px/18px "Cuprum", sans-serif;
+}
+
+.footer_dark_grey .container {
+  display: flex;
+  margin: 0px 130px;
+}
+
+.footer_bottom_menu,
+.footer_top_menu
+ {
+ display: inline-block;
+}
+
+.develop {
+  justify-content: flex-end;
+}
+
+.article_wrap {
+  background-color: #f2f6f8;
+  padding-top: 65px;
+  padding-right: 130px;
+  padding-left: 130px;
+  padding-bottom: 75px;
+}
+
+.article_wrap p{
+  font: 13px/24px "PT Sans", sans-serif;
 }
