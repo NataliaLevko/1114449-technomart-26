@@ -6,6 +6,7 @@
     <meta name="keywords" content="строительные материалы, инструменты для ремонта, купить строительные материалы спб">
     <meta name="description" content="В интернет-магазине Техномарт вы можете приобрести товары для строительства и ремонта.">
     <title>Техномарт-интернет-магазин строительных материалов</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet" type="text/css">
   </head>
@@ -17,12 +18,15 @@
 
           <div class="header_logo">
             <a href="index.html">
-              <img src="img/logo_technomart.png" title="Логотип Техномарт" alt="Логотип Техномарт">
+              <img src="img/logo_technomart.png" class="logo" aria-label="Логотип Техномарт" alt="Логотип Техномарт">
             </a>
           </div>
 
-          <form>
-            <img src="img/icon-search.svg"><input type="search" placeholder="Поиск:">
+          <form action="" method="get" class="search">
+            <button type="submit" area-label="Поиск" class="btn_search">
+              <img src="img/icon-search.svg">
+            </button>
+            <input type="search" placeholder="Поиск:" class="inp_search">
           </form>
 
           <ul class="ul_wrap">
@@ -43,31 +47,31 @@
       <div class="header_bottom">
         <div class="container">
           <div class="text_container">
-            <p class="describe">
+            <p class="desc">
               Интернет-магазин
               строительных материалов
               и инструментов для ремонта
             </p>
             <div>
-              <img src="img/icon-cart.svg">
+              <img src="img/icon-cart.svg" aria-label="телефон">
               <span>+7(812) 555-05-55</span>
               <address>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</address>
             </div>
             <ul class="account">
-              <li><img src="img/icon-login.svg"><a href="#">Войти</a></li>
+              <li><img src="img/icon-login.svg"><a href="login.html">Войти</a></li>
               <li><a href="#">Регистрация</a></li>
             </ul>
           </div>
 
           <nav>
             <ul class="main_menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="company.html">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="offers.html">Спецпредложения</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li class="main_item"><a href="index.html">Главная</a></li>
+                <li class="main_item"><a href="company.html">Компания</a></li>
+                <li class="main_item"><a href="catalog.html">Каталог</a></li>
+                <li class="main_item"><a href="news.html">Новости</a></li>
+                <li class="main_item"><a href="offers.html">Спецпредложения</a></li>
+                <li class="main_item"><a href="delivery.html">Доставка</a></li>
+                <li class="main_item"><a href="contacts.html">Контакты</a></li>
             </ul>
           </nav>
 
@@ -101,7 +105,7 @@
             Вы можете забрать товар сами,
             заехав в наш офис
           </p>
-          <a href="https://yandex.ru/maps/"><img src="img/map.png" alt="карта проезда"></a>
+          <a href="https://yandex.ru/maps/"><img src="img/map.png" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
           <button class="red_radius" type="submit" name="write">заблудились? напишите нам</button>
         </div>
       </section>
@@ -149,7 +153,7 @@
             Все права защищены
           </p>
 
-          <ul class="social_icon">
+          <ul class="socials">
             <li>
               <a title="Vk" href="http://vk.com/club" rel="nofollow noreferrer noopener" target="_blank"><img src="vk.png" alt="vk"></a>
             </li>

@@ -1,10 +1,9 @@
 body {
-background-color: #ffffff;
-font: 17px "PT Sans", "Cuprum", sans-serif;
-margin: 0px;
-padding: 0px;
-max-width: 1200px;
-height: 100vh;;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: normal;
 }
 
 h2 {
@@ -20,6 +19,11 @@ ul {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 header {
   background-color: #f4f7f9;
   width: 100%;
@@ -28,27 +32,142 @@ header {
 .header_top  {
   width: 100%;
   background-color: #293449;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 18px;
 }
 
 .header_top .container {
   display: flex;
-  justify-content: center;
+  width: 960px;
+  height: 42px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
-section {
+.header_bottom {
+  padding-bottom: 60px;
+}
+
+.header_logo {
+   background-color: #ee3643;
+   width: 220px;
+   min-height: 43px;
+   border-bottom: 5px solid rgba(0, 0, 0, 0.24);
+   text-align: center;
+   justify-content: flex-start;
+}
+
+.logo {
+   justify-content: space-around;
+}
+
+.search {
+   margin-left: 17px;
+}
+
+.btn_search {
+  background-color: #293449;
+  border: none;
+}
+
+.inp_search {
+  background-color: #293449;
+  border: none;
+  color: #fff;
+}
+
+.ul_wrap {
+  display: inline-flex;
+}
+
+.ul_wrap a {
+  color: #fff;
+}
+/*.catalog_main {
   display: flex;
-  width: 940px;
-  margin: 80px 130px 86px;
-}
-
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}*/
 
 .breadcrumbs {
-  display:inline-flex;
-  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 940px;
+  min-height: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 25px;
+  margin-left: 130px;
+  margin-right: 130px;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
 }
 
-.breadcrumbs li a {
-  justify-content: space-between;
+.breadcrumbs-item {
+  margin-right: 18px;
+}
+
+.breadcrumbs a {
+  color: inherit;
+}
+
+h2.catalog_title {
+  min-height: 89px;
+  padding-left: 30px;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-bottom: 20px;
+  background-color: #f2f6f8;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size:  30px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  color: #32425c;
+  text-transform: uppercase;
+
+}
+
+.catalog_view {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.aside_catalog {
+  width: 220px;
+  margin-right: 20px;
+  float: left;
+  background-color: #ffffff;
+}
+
+.beige_wrap {
+  background-color: #f7f3ec;
+  min-height: 38px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.items_list li {
+  width: 220px;
+  height: 318px;
+  border-color: 1px solid #E5E5E5;
+}
+
+.catalog_section {
+  float: left;
+  max-width: 700px;
 }
 
 .company {
@@ -70,57 +189,43 @@ section {
   margin-right: auto;
 }
 
-nav .main_menu {
-  width: 940px;
-  height: 55px;
+.main_menu {
+  max-width: 940px;
+  min-height: 55px;
   border-bottom: 5px solid #293449;
-  margin-right: 130px;
-  margin-left: 130px;
-  margin-bottom: 60px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
+  margin: 0 auto;
+  display: block;
   background-color: #32425c;
   font: 17px/17px "Cuprum";
 }
 
-.main_menu li a {
+.main_item {
+  margin-right: 60px;
+  width: auto;
+}
+
+.main_menu a {
   color: #FFFFFF;
 }
 
-
-
 .visually-hidden {
-
-  visibility: hidden;
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
 
-}
-
-.logo {
-
-background-image: url(../img/red_block.png);
-position: absolute;
-left: 130px;
-top: -4px;
-width: 220px;
-height: 51px;
-}
 
 .paginator {
  display:inline-flex;
 }
 
 .main_logo img {
-
-display: flex;
-
+  display: flex;
 }
 
 button[name="look"] {
@@ -144,24 +249,33 @@ button[name="look"] {
   font-weight:normal;
 }
 
+.account li {
+  display: inline-block;
+  min-height: 45px;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
 
-.describe {
-width: 226px;
-height: 71px;
-left: 182px;
-top: 84.5px;
+.account li:first-child {
+  padding-left: 14px;
+}
 
-font-family: Cuprum;
-font-style: italic;
-font-weight: normal;
-font-size: 16px;
-line-height: 23px;
-/* or 144% */
-display: flex;
-align-items: center;
+.account li:last-child {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
-color: #EE3643;
-
+.desc {
+  width: 226px;
+  margin-left: 182px;
+  white-space: pre;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  display: flex;
+  color: #EE3643;
 }
 
 
@@ -169,12 +283,17 @@ color: #EE3643;
 .main_menu li,
 .catalog_nav li,
 .items_list li,
-.type_sort li,
 .footer_top_menu li,
-.footer_up_menu li {
+.footer_up_menu li
+.footer_bottom_menu li {
 
 display: inline-flex;
 
+}
+
+.type_sort {
+  display: flex;
+  align-items: center;
 }
 
 .red_radius {
@@ -207,11 +326,6 @@ display: inline-flex;
   display: inline-flex;
 
 }
-
-#link a:link{color: #ffd180; text-decoration: none;}
-#link a:hover{color: #ffd180; text-decoration: underline;}
-#link a:active{color: #ee3643; text-decoration: underline;}
-
 
 .form_wrap {
   width: 620px;
@@ -256,6 +370,7 @@ input[name="text"] {
 .footer_grey .container {
   display: flex;
   margin: 0px 130px;
+  width: auto;
 }
 
 .footer_dark_grey {
@@ -267,6 +382,7 @@ input[name="text"] {
 .footer_dark_grey .container {
   display: flex;
   margin: 0px 130px;
+  width: auto;
 }
 
 .footer_bottom_menu,
@@ -280,13 +396,33 @@ input[name="text"] {
 }
 
 .article_wrap {
+  clear: both;
   background-color: #f2f6f8;
-  padding-top: 65px;
-  padding-right: 130px;
-  padding-left: 130px;
-  padding-bottom: 75px;
+  width: auto;
 }
 
-.article_wrap p{
-  font: 13px/24px "PT Sans", sans-serif;
+.article_catalog {
+
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 65px;
+  padding-bottom: 75px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title_article {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.text_article {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  white-space: pre-wrap;
+}
+
+.items_list li {
+  float: left;
 }

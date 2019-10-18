@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Купить перфораторы в интернет магазине Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet" type="text/css">
   </head>
@@ -17,12 +18,15 @@
 
           <div class="header_logo">
             <a href="index.html">
-              <img src="img/logo_technomart.png" title="Логотип Техномарт" alt="Логотип Техномарт">
+              <img src="img/logo_technomart.png" class="logo" aria-label="Логотип Техномарт" alt="Логотип Техномарт">
             </a>
           </div>
 
-          <form>
-            <img src="img/icon-search.svg"><input type="search" placeholder="Поиск:">
+          <form  action="" method="get" class="search">
+            <button type="submit" area-label="Поиск" class="btn_search">
+              <img src="img/icon-search.svg">
+            </button>
+            <input type="search" placeholder="Поиск:" class="inp_search">
           </form>
 
           <ul class="ul_wrap">
@@ -43,7 +47,7 @@
       <div class="header_bottom">
         <div class="container">
           <div class="text_container">
-            <p class="describe">
+            <p class="desc">
               Интернет-магазин
               строительных материалов
               и инструментов для ремонта
@@ -55,7 +59,7 @@
             </div>
             <div>
               <div class="account">
-                <img src="img/icon-user.svg"><a href="login.html">Равшан Джамшутович</a>
+                <img src="img/icon-user.svg" class="userpic" aria-label="аватар"><a href="login.html">Равшан Джамшутович</a>
                 <a href="login.html"><img src="img/icon-logout.svg"></a>
               </div>
               <ul class="user_menu">
@@ -68,13 +72,13 @@
          <!-- Главная навигация-->
           <nav>
               <ul class="main_menu">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="company.html">Компания</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="news.html">Новости</a></li>
-                <li><a href="offers.html">Спецпредложения</a></li>
-                <li><a href="delivery.html">Доставка</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+                <li class="main_item"><a href="index.html">Главная</a></li>
+                <li class="main_item"><a href="company.html">Компания</a></li>
+                <li class="main_item"><a href="catalog.html">Каталог</a></li>
+                <li class="main_item"><a href="news.html">Новости</a></li>
+                <li class="main_item"><a href="offers.html">Спецпредложения</a></li>
+                <li class="main_item"><a href="delivery.html">Доставка</a></li>
+                <li class="main_item"><a href="contacts.html">Контакты</a></li>
               </ul>
           </nav>
 
@@ -83,21 +87,24 @@
     </header>
 
     <!--MAIN-->
-    <main>
+    <main class="catalog_main">
         <ul class="breadcrumbs">
-          <li><a href="index.html"><img src="img/icon-home.svg"</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Перфораторы</a></li>
+          <li class="breadcrumbs-item"><a href="index.html"><img src="img/icon-home.svg"</a></li>
+          <li class="breadcrumbs-item"><img src="img/icon-right-small.svg"></li>
+          <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs-item"><img src="img/icon-right-small.svg"></li>
+          <li class="breadcrumbs-item"><a href="#">Инструмент</a></li>
+          <li class="breadcrumbs-item"><img src="img/icon-right-small.svg"></li>
+          <li class="breadcrumbs-item"><a href="#">Перфораторы</a></li>
         </ul>
 
 
         <h2 class="catalog_title">Перфораторы</h2>
 
-      <div>
-        <aside>
+      <div class="catalog_view">
+        <aside class="aside_catalog">
           <form>
-            <div>
+            <div class="beige_wrap">
               <span>Фильтр:</span>
             </div>
             <div>
@@ -154,8 +161,8 @@
           </form>
         </aside>
 
-        <section>
-          <div class="sort"><!--тут есть сомнения нужно ли все оборачивать в список или просто сделать span и внутри них ссылки-->
+        <section class="catalog_section">
+          <div class="sort beige_wrap">
             <span>Сортировка:</span>
             <ul class="type_sort">
               <li><a href="#">по цене</a></li>
@@ -170,7 +177,10 @@
             <ul class="items_list">
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" width="218"
+                    height="170" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <p class="old_price">22500 р.</p>
@@ -182,7 +192,9 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <p class="old_price">30500 р.</p>
@@ -194,7 +206,9 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <p class="old_price"></p>
@@ -206,7 +220,9 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <p class="old_price">22500 р.</p>
@@ -218,7 +234,9 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <p class="old_price">30500 р.</p>
@@ -230,7 +248,9 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <p class="old_price"></p>
@@ -242,7 +262,9 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <p class="old_price">22500 р.</p>
@@ -254,7 +276,9 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <p class="old_price">30500 р.</p>
@@ -266,7 +290,9 @@
               </li>
               <li>
                 <a href="#">
-                  <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  <p class="catalog-item-image">
+                    <img src="img/perforator.png" title="Перфоратор" alt="Перфоратор">
+                  </p>
                 </a>
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <p class="old_price"></p>
@@ -294,12 +320,11 @@
             </li>
           </ul>
         </section>
-      </div>
 
       <div class="article_wrap"><!--нужно дополнительно article оборачивать в div или все стили можно сразу к article применить?-->
-        <article>
-          <h2>Пара слов о перфораторах</h2>
-          <p>
+        <article class="article_catalog">
+          <h2 class="title_article">Пара слов о перфораторах</h2>
+          <p class="text_article">
             Перфоратор универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
             ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
@@ -352,7 +377,7 @@
             Все права защищены
           </p>
 
-          <ul class="social_icon">
+          <ul class="socials">
             <li>
               <a title="Vk" href="http://vk.com/club" rel="nofollow noreferrer noopener" target="_blank"><img src="vk.png" alt="vk"></a>
             </li>
