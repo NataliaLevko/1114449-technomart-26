@@ -26,23 +26,18 @@ img {
 
 header {
   background-color: #f4f7f9;
-  width: 100%;
 }
 
 .header_top  {
-  width: 100%;
   background-color: #293449;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
 }
 
-.header_top .container {
-  display: flex;
-  width: 960px;
-  height: 42px;
-  margin-left: 120px;
-  margin-right: 120px;
+.container {
+  width: 940px;
+  margin: 0 auto;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -54,10 +49,9 @@ header {
 .header_logo {
    background-color: #ee3643;
    width: 220px;
-   min-height: 43px;
+   margin-bottom: -5px;
    border-bottom: 5px solid rgba(0, 0, 0, 0.24);
    text-align: center;
-   justify-content: flex-start;
 }
 
 .logo {
@@ -80,31 +74,47 @@ header {
 }
 
 .ul_wrap {
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
 }
 
 .ul_wrap a {
   color: #fff;
 }
-/*.catalog_main {
-  display: flex;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-}*/
+
+.btn {
+  padding: 11px 20px;
+  margin-right: 10px;
+}
+
+.btn_green {
+  padding: 11px 20px;
+  background-color: #63a63e;
+}
+
+.img_phone {
+  border: 3px solid #ffffff;
+  padding-right: 50px;
+}
+
+.contact_top {
+  display: inline-block;
+
+}
+
+.catalog_main {
+  width: 940px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .breadcrumbs {
   display: flex;
   justify-content: flex-start;
-  max-width: 940px;
-  min-height: 60px;
   padding-left: 0px;
-  padding-right: 0px;
   margin-top: 25px;
-  margin-left: 130px;
-  margin-right: 130px;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -124,10 +134,8 @@ header {
 
 h2.catalog_title {
   min-height: 89px;
-  padding-left: 30px;
-  margin-left: 130px;
-  margin-right: 130px;
   margin-bottom: 20px;
+  padding-left: 28px;
   background-color: #f2f6f8;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size:  30px;
@@ -136,7 +144,6 @@ h2.catalog_title {
   font-weight: normal;
   color: #32425c;
   text-transform: uppercase;
-
 }
 
 .catalog_view {
@@ -165,6 +172,10 @@ h2.catalog_title {
   border-color: 1px solid #E5E5E5;
 }
 
+.index_section {
+  display: flex;
+}
+
 .catalog_section {
   float: left;
   max-width: 700px;
@@ -182,30 +193,38 @@ h2.catalog_title {
 }
 
 .contacts {
-  display: flex;
   justify-content: flex-end;
   width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.main_menu {
+.index_main {
   max-width: 940px;
-  min-height: 55px;
-  border-bottom: 5px solid #293449;
   margin: 0 auto;
-  display: block;
-  background-color: #32425c;
-  font: 17px/17px "Cuprum";
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.main_item {
-  margin-right: 60px;
-  width: auto;
+.main_menu {
+  border-bottom: 5px solid #293449;
+  margin: 0 auto;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #32425c;
+  font: 17px/17px "Cuprum";
+  list-style-type: none;
 }
+
+/*.main_item {
+  margin-right: 60px;
+}*/
 
 .main_menu a {
   color: #FFFFFF;
+  padding: 19px 30px;
+  display: inline-block;
 }
 
 .visually-hidden {
@@ -219,6 +238,9 @@ h2.catalog_title {
   overflow: hidden;
 }
 
+.text_container {
+  display: flex;
+}
 
 .paginator {
  display:inline-flex;
@@ -267,7 +289,6 @@ button[name="look"] {
 
 .desc {
   width: 226px;
-  margin-left: 182px;
   white-space: pre;
   font-family: "Cuprum", "Arial", sans-serif;
   font-style: italic;
@@ -278,9 +299,6 @@ button[name="look"] {
   color: #EE3643;
 }
 
-
-
-.main_menu li,
 .catalog_nav li,
 .items_list li,
 .footer_top_menu li,
@@ -362,27 +380,13 @@ input[name="text"] {
 }
 
 .footer_grey {
-  width: 100%;
   background-color: #32425c;
   font: 18px/24px "Cuprum", sans-serif;
 }
 
-.footer_grey .container {
-  display: flex;
-  margin: 0px 130px;
-  width: auto;
-}
-
 .footer_dark_grey {
-  width: 100%;
   background-color: #293449;
   font: 16px/18px "Cuprum", sans-serif;
-}
-
-.footer_dark_grey .container {
-  display: flex;
-  margin: 0px 130px;
-  width: auto;
 }
 
 .footer_bottom_menu,
