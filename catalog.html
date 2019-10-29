@@ -11,7 +11,7 @@
   <body>
 
     <!--HEADER -->
-    <header>
+    <header class="header_catalog">
       <div class="header_top">
         <div class="container">
           <h1 class="visually-hidden">Каталог Техномарт</h1>
@@ -24,9 +24,13 @@
 
           <form action="#" method="get" class="search">
             <button type="submit" area-label="Поиск" class="btn_search">
-              <img src="img/icon-search.svg">
+              <svg width="17" height="17" class="icon_search" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 12l3.5 3.6-1.4 1.4-3.6-3.5a7.5 7.5 0 01-12-6A7.5 7.5 0 1113.5 12zm-6-10a5.5 5.5 0 100 11 5.5 5.5 0 000-11z" />
+              </svg>
             </button>
-            <input type="search" placeholder="Поиск:" class="inp_search">
+            <label for="inp_search" class="visually-hidden">Поиск на сайте:</label>
+            <input type="search" placeholder="Поиск:" class="inp_search" id="inp_search">
+            </label>
           </form>
 
           <ul class="ul_wrap">
@@ -221,7 +225,8 @@
                   <a class="add_bookmarks" href="#">В закладки</a>
                 </div>
               </li>
-              <li style="margin-right: 0px;">
+              <li class="new_item" style="margin-right: 0px;">
+                <img src="img/new flag.png" class="new">
                 <a href="#">
                   <p class="catalog-item-image">
                     <img src="img/perforator1.png" width="218" height="170" title="Перфоратор" alt="Перфоратор">
@@ -249,8 +254,8 @@
                   <a class="add_bookmarks" href="#">В закладки</a>
                 </div>
               </li>
-              <li class="item_new">
-                <div class="new">новинка</div>
+              <li class="new_item">
+                <img src="img/new flag.png" class="new">
                 <a href="#">
                   <p class="catalog-item-image">
                     <img src="img/perforator1.png" width="218" height="170" title="Перфоратор" alt="Перфоратор">
@@ -366,11 +371,11 @@
              </div>
 
              <ul class="footer_top_menu">
-               <li class="footer_top_menu_item"><a href="company.html">Компания</a></li>
-               <li class="footer_top_menu_item"><a href="news.html">Новости</a></li>
-               <li class="footer_top_menu_item"><a href="catalog.html">Каталог</a></li>
-               <li class="footer_top_menu_item"><a href="delivery.html">Доставка</a></li>
-               <li class="footer_top_menu_item"><a href="contacts.html">Контакты</a></li>
+               <li class="footer_top_menu_item"><a href="company.html" class="link_footer_top">Компания</a></li>
+               <li class="footer_top_menu_item"><a href="news.html" class="link_footer_top">Новости</a></li>
+               <li class="footer_top_menu_item"><a href="catalog.html" class="link_footer_top">Каталог</a></li>
+               <li class="footer_top_menu_item"><a href="delivery.html" class="link_footer_top">Доставка</a></li>
+               <li class="footer_top_menu_item"><a href="contacts.html" class="link_footer_top">Контакты</a></li>
              </ul>
            </div>
 
@@ -380,10 +385,10 @@
 +7 (812) 555-05-55
              </p>
              <ul class="footer_bottom_menu">
-               <li><a href="#">Материалы</a></li>
-               <li><a href="#">Техника</a></li>
-               <li><a href="#">Инструмент</a></li>
-               <li><a href="offers.html" style="padding-right: 0px;">Спецпредложения</a></li>
+               <li class="footer_bottom_menu_item"><a href="#" class="link_footer_bottom">Материалы</a></li>
+               <li class="footer_bottom_menu_item"><a href="#" class="link_footer_bottom">Техника</a></li>
+               <li class="footer_bottom_menu_item"><a href="#" class="link_footer_bottom">Инструмент</a></li>
+               <li class="footer_bottom_menu_item"><a href="#" style="padding-right: 0px;" class="link_footer_bottom">Спецпредложения</a></li>
              </ul>
            </div>
          </div>
@@ -393,7 +398,7 @@
       <div class="footer_dark_grey">
         <div class="container">
           <p class="copyright">
-© 2010-<time datetime="2019">2019</time> Компания «Техномарт»
+© 2010-2019 Компания «Техномарт»
 Все права защищены
           </p>
 
