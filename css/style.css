@@ -101,7 +101,6 @@ a {
 	color: #ffffff;
 }
 
-
 /* - Chrome ≤56,
    - Safari 5-10.0
    - iOS Safari 4.2-10.2
@@ -131,8 +130,8 @@ input[type="search"].inp_search:-moz-placeholder {
 	font-style: normal;
 	font-weight: normal;
 	color: #ffffff;
+  opacity: 1;
 }
-
 
 /* Firefox 19-50 */
 
@@ -143,8 +142,18 @@ input[type="search"].inp_search::-moz-placeholder {
 	font-style: normal;
 	font-weight: normal;
 	color: #ffffff;
+  opacity: 1;
 }
 
+input[type="search"].inp_search:-moz-placeholder {
+	font-family: "Cuprum", "Arial", sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-style: normal;
+	font-weight: normal;
+	color: #ffffff;
+  opacity: 1;
+}
 
 /* - Internet Explorer 10–11
    - Internet Explorer Mobile 10-11 */
@@ -158,7 +167,6 @@ input[type="search"].inp_search:-ms-input-placeholder {
 	color: #ffffff;
 }
 
-
 /* Edge (also supports ::-webkit-input-placeholder) */
 
 input[type="search"].inp_search::-ms-input-placeholder {
@@ -170,7 +178,6 @@ input[type="search"].inp_search::-ms-input-placeholder {
 	color: #ffffff;
 }
 
-
 /* CSS Pseudo-Elements Level 4 Editor Draft */
 
 input[type="search"].inp_search::placeholder {
@@ -180,6 +187,7 @@ input[type="search"].inp_search::placeholder {
 	font-style: normal;
 	font-weight: normal;
 	color: #ffffff;
+  line-height: 43px;
 }
 
 .inp_search:hover {
@@ -223,11 +231,17 @@ input[type="search"].inp_search::placeholder {
 	padding-top: 12px;
 }
 
-.bookmark,
+.bookmark {
+	color: #ffffff;
+	background-color: #293449;
+	padding-bottom: 11px;
+	padding-top: 11px;
+}
+
 .basket {
 	color: #ffffff;
 	background-color: #293449;
-	padding-bottom: 12px;
+	padding-bottom: 11.6px;
 	padding-top: 11px;
 }
 
@@ -236,7 +250,7 @@ input[type="search"].inp_search::placeholder {
 	color: #ffffff;
 	padding-right: 21.5px;
 	padding-left: 21px;
-	padding-bottom: 12px;
+	padding-bottom: 11.6px;
 	padding-top: 11px;
 }
 
@@ -453,8 +467,8 @@ input[type="search"].inp_search::placeholder {
 	color: #ee3643;
 }
 
-a.user_enter:hover::before,
-a.user_enter:focus::before {
+.user_enter:hover::before,
+.user_enter:focus::before {
 	content: url(../img/icon-login-hover.svg);
 }
 
@@ -462,7 +476,7 @@ a.user_enter:focus::before {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-a.user_enter:active::before {
+.user_enter:active::before {
 	content: url(../img/icon-login.svg);
 }
 
@@ -479,22 +493,22 @@ a.user_enter:active::before {
 }
 
 .user {
-	display: block;
+	display: inline-block;
 	padding-top: 13px;
 	padding-left: 46px;
 	padding-bottom: 11px;
 	color: #000000;
 }
 
-a.user::before {
+.user::before {
 	content: url(../img/icon-user.svg);
 	position: absolute;
 	left: 13px;
 	top: 15px;
 }
 
-a.user:hover::before,
-a.user:focus::before {
+.user:hover::before,
+.user:focus::before {
 	content: url(../img/icon-user-hover.svg);
 	position: absolute;
 	left: 13px;
@@ -503,46 +517,33 @@ a.user:focus::before {
 
 .user_exit {
   background-image: url("../img/icon-logout.svg");
-  position: absolute;
-	right: 10px;
-	top: 16px;
-}
-/*.user_catalog a::after {
-	content: url(../img/icon-logout.svg);
-	position: absolute;
-	right: 10px;
-	top: 16px;
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+  margin-left: 32px;
+  margin-right: auto;
+  vertical-align: middle;
 }
 
-.user_catalog a:hover::after,
-.user_catalog a:focus::after {
-	content: url(../img/icon-logout-hover.svg);
-	position: absolute;
-	right: 10px;
-	top: 16px;
+.user_exit:hover,
+.user_exit:focus {
+	background-image: url(../img/icon-logout-hover.svg);
 }
 
-*/
+.user_exit:active {
+	background-image: url("../img/icon-logout.svg");
+}
 
-a.user:active {
+.user:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-a.user:active::before {
+.user:active::before {
 	content: url(../img/icon-user.svg);
 	position: absolute;
 	left: 13px;
 	top: 15px;
 }
-
-/*
-.user_catalog a:active::after {
-	content: url(../img/icon-logout.svg);
-	position: absolute;
-	right: 10px;
-	top: 16px;
-}*/
-
 
 /*account*/
 
@@ -795,7 +796,6 @@ a.user:active::before {
 	width: 95px;
 	padding-top: 10px;
 	padding-bottom: 10.5px;
-	padding-left: 20px;
 	border-radius: 2px;
 	border: none;
 	box-sizing: border-box;
@@ -815,15 +815,6 @@ a.user:active::before {
 
 .max_price {
 	margin-left: 2px;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 .maker {
@@ -1496,24 +1487,13 @@ input[type=number] {
 	fill: #ee3643;
 }
 
-/*.new_item {
-  background-image: url("../img/new-flag.png");
-	position: absolute;
-	right: 0px;
-	top: 0px;
-}
-
-/*.new {
-  background-image: url("../img/new-flag.png");
+.new_item::before {
+  content: url("../img/new-flag.png");
 	position: absolute;
 	right: 0px;
 	top: 0px;
   z-index: 2;
 }
-
-new_item
-
-/*<img src="img/new-flag.png" class="new" alt="новинка">*/
 
 .red {
 	display: block;
@@ -2021,7 +2001,7 @@ new_item
 
 .footer_logo {
 	margin-top: 18px;
-	margin-right: 143px;
+	margin-right: 138px;
 }
 
 .footer_logo a {
