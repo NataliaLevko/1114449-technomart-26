@@ -386,9 +386,9 @@ input[type="search"].inp_search::placeholder {
 
 .img_phone span {
 	display: block;
-	padding-top: 9.5px;
-	padding-bottom: 9px;
-	padding-left: 60px;
+	padding-top: 10.5px;
+	padding-bottom: 8px;
+	padding-left: 57px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 21px;
 	line-height: 21px;
@@ -400,7 +400,7 @@ input[type="search"].inp_search::placeholder {
 .img_phone span::before {
 	content: url(../img/icon-phone.svg);
 	position: absolute;
-	left: 13px;
+	left: 10px;
 }
 
 
@@ -984,6 +984,18 @@ input[type="search"].inp_search::placeholder {
 	background-color: #ffffff;
 }
 
+.index_items_list {
+	width: 220px;
+	margin-top: 20px;
+	margin-right: 20px;
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+}
+
 .catalog_items_list:nth-child(3n) {
 	margin-right: 0px;
 }
@@ -997,10 +1009,26 @@ input[type="search"].inp_search::placeholder {
 	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
+.index_items_list:hover {
+	background: #ffffff;
+	box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
 .catalog_items_list:hover .quick_order {
 	display: flex;
   flex-direction: column;
   z-index: 1;
+}
+
+.index_items_list:hover .quick_order {
+	display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.index_items_list a {
+	display: flex;
+	flex-direction: column;
 }
 
 .catalog_items_list a {
@@ -1532,12 +1560,14 @@ input[type="search"].inp_search::placeholder {
 
 .catalog_index {
 	margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .catalog_items {
 	display: flex;
 	list-style: none;
 	padding-left: 0px;
+  margin-bottom: 0px;
 }
 
 .title_catalog_item {
@@ -1604,7 +1634,7 @@ input[type="search"].inp_search::placeholder {
 	text-align: center;
 	margin-left: 25px;
 	margin-bottom: 22px;
-	padding-top: 10px;
+	padding-top: 11px;
 	padding-bottom: 10px;
 	text-transform: uppercase;
 }
@@ -1694,11 +1724,19 @@ input[type="search"].inp_search::placeholder {
 .offers_list {
 	list-style: none;
 	padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0;
 }
 
 .offers_item {
 	background-color: #8ed78f;
 	position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.offers_item:last-child {
+  margin-top: 20px;
 }
 
 .title_offers {
@@ -1708,11 +1746,15 @@ input[type="search"].inp_search::placeholder {
 	font-style: normal;
 	font-weight: bold;
 	color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  margin-left: 22px;
+  padding-top: 21px;
 }
 
 .icon_sale {
 	position: absolute;
-	top: 0px;
+	top: 24px;
 	right: 45px;
 }
 
@@ -1836,8 +1878,6 @@ input[type="search"].inp_search::placeholder {
 }
 
 .shadow_image {
-	background-image: url("../img/shadow.png");
-	display: block;
 	position: absolute;
 	right: 0px;
 	top: calc(100% - 240px);
