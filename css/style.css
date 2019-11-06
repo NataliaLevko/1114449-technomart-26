@@ -527,7 +527,7 @@ input[type="search"].inp_search::placeholder {
 
 .user_exit:hover,
 .user_exit:focus {
-	background-image: url(../img/icon-logout-hover.svg);
+	background-image: url("../img/icon-logout-hover.svg");
 }
 
 .user_exit:active {
@@ -858,7 +858,7 @@ input[type="search"].inp_search::placeholder {
 }
 
 .check_box {
-	background-image: url(../img/checkbox-off.svg);
+	background-image: url("../img/checkbox-off.svg");
 	position: absolute;
 	width: 23.5px;
 	height: 23px;
@@ -866,51 +866,51 @@ input[type="search"].inp_search::placeholder {
 }
 
 .inp_check:checked+.check_box {
-	background-image: url(../img/checkbox-on.svg);
+	background-image: url("../img/checkbox-on.svg");
   width: 27px;
 	height: 23px;
 }
 
 .inp_check:hover+.check_box {
-	background-image: url(../img/checkbox-off-hover.svg);
+	background-image: url("../img/checkbox-off-hover.svg");
   width: 23.5px;
 	height: 23px;
 }
 
 .inp_check:checked:hover+.check_box {
-	background-image: url(../img/checkbox-on-hover.svg);
+	background-image: url("../img/checkbox-on-hover.svg");
   width: 27px;
 	height: 23px;
 }
 
 .inp_check:focus+.check_box {
-	background-image: url(../img/checkbox-off-hover.svg);
+	background-image: url("../img/checkbox-off-hover.svg");
   width: 23.5px;
 	height: 23px;
 	outline: 2px #79abfe solid;
 }
 
 .inp_check:checked:focus+.check_box {
-	background-image: url(../img/checkbox-on-hover.svg);
+	background-image: url("../img/checkbox-on-hover.svg");
   width: 27px;
 	height: 23px;
 	outline: 2px #79abfe solid;
 }
 
 .inp_check:disabled+.check_box {
-	background-image: url(../img/checkbox-off-disabled.svg);
+	background-image: url("../img/checkbox-off-disabled.svg");
   width: 23.5px;
 	height: 23px;
 }
 
 .inp_check:checked:disabled+.check_box {
-	background-image: url(../img/checkbox-on-disabled.svg);
+	background-image: url("../img/checkbox-on-disabled.svg");
   width: 27px;
 	height: 23px;
 }
 
 .radio_box {
-	background-image: url(../img/radio-off.svg);
+	background-image: url("../img/radio-off.svg");
 	position: absolute;
 	width: 25px;
 	height: 25px;
@@ -1066,6 +1066,7 @@ input[type="search"].inp_search::placeholder {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-top: 0px;
+  margin-bottom: 86px;
 }
 
 .company {
@@ -1076,6 +1077,7 @@ input[type="search"].inp_search::placeholder {
 .contacts_text {
 	white-space: pre;
 	margin-top: 1px;
+  margin-bottom: 0;
 }
 
 .company_text,
@@ -1538,22 +1540,50 @@ input[type="search"].inp_search::placeholder {
 	text-transform: uppercase;
 	padding-top: 10.5px;
 	padding-bottom: 10px;
-	margin-top: 40px;
 }
 
 .btn_red {
 	width: 300px;
+  margin-top: 35px;
 }
 
 .link_red {
 	width: 220px;
+  margin-top: 36px;
+}
+
+
+.preview_map:active + .big_map {
+  display: block;
+}
+
+.big_map {
+  display: none;
+  box-shadow: 0 0 14.7px rgba(47, 42, 43, 0.5);
+  position: absolute;
+  left: 130px;
+  top: 2348px;
+  z-index: 2;
+}
+
+.map_close {
+  background-image: url("../img/icon-close.svg");
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent;
+  display: none;
+  position: absolute;
+  left: 1040px;
+  top: 2357px;
+  z-index: 3;
 }
 
 .link_red_section {
 	width: 253px;
 	margin-top: 25px;
 	margin-right: 24px;
-	margin-bottom: 26px;
+	margin-bottom: 25px;
 	padding-top: 10.5px;
 	padding-bottom: 10px;
 }
@@ -1794,7 +1824,7 @@ input[type="search"].inp_search::placeholder {
 .wrap_section {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 53px;
+	margin-bottom: 52px;
 }
 
 .popular_brands {
@@ -1849,16 +1879,16 @@ input[type="search"].inp_search::placeholder {
 }
 
 .contacts img {
-	margin: 40px 0;
-	;
+	margin-top: 9px;
 }
 
 .index_section_service {
 	padding-top: 68px;
-	padding-bottom: 93px;
+	padding-bottom: 85px;
 	margin-bottom: 79px;
 	background: url(../img/grey-background.jpg);
 	background-color: #f4f8f9;
+  overflow-y: hidden;
 }
 
 .service {
@@ -1885,6 +1915,7 @@ input[type="search"].inp_search::placeholder {
 	display: flex;
 	position: relative;
 	margin-top: 71px;
+  margin-bottom: 8px;
 }
 
 .shadow_image {
@@ -1920,23 +1951,52 @@ input[type="search"].inp_search::placeholder {
 	box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
 
-.link_advantage:hover {
-	color: #ffffff;
-	background-color: #293449;
-	box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
-}
-
 .advantage_item_toggle {
 	color: #32425c;
 	background: #ffffff;
 	box-shadow: 0px 1px 0px #ffffff, inset 0px 1px 0px #ffffff;
 }
 
-.about_delivery {
-	width: 300px;
+.advantage_item:hover > .link_advantage {
+	color: #ffffff;
+	background-color: #293449;
+	box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
 }
 
-.title_delivery {
+.advantage_item:focus > .link_advantage {
+	color: #ffffff;
+	background-color: #293449;
+	box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
+.advantage_item:active > .link_advantage {
+  color: #32425c;
+	background: #ffffff;
+	box-shadow: 0px 1px 0px #ffffff, inset 0px 1px 0px #ffffff;
+}
+
+.about_delivery,
+.about_guarantee,
+.about_credit {
+	width: 380px;
+}
+
+.about_delivery {
+  display: block;
+}
+
+.about_guarantee {
+  display: none;
+}
+
+.about_credit {
+  display: none;
+}
+
+
+.title_delivery,
+.title_guarantee,
+.title_credit {
 	margin-top: -2px;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 36px;
@@ -1947,7 +2007,9 @@ input[type="search"].inp_search::placeholder {
 	text-transform: uppercase;
 }
 
-.delivery_text {
+.delivery_text,
+.guarantee_text,
+.credit_text {
 	margin-top: -30px;
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 13px;
@@ -1958,15 +2020,23 @@ input[type="search"].inp_search::placeholder {
 	white-space: pre-wrap;
 }
 
-.auto {
+.delivery,
+.guarantee,
+.credit {
 	position: absolute;
 	right: 0px;
 	top: 22px;
 }
 
+.btn_credit {
+  width: 195px;
+  margin-top: 26px;
+}
+
 .transport_company {
 	list-style-type: none;
-	padding-left: 0px;
+	padding-left: 0;
+  margin-top: 0;
 	position: relative;
 	font-family: "Cuprum", "Arial", sans-serif;
 	font-size: 18px;
@@ -1977,10 +2047,17 @@ input[type="search"].inp_search::placeholder {
 }
 
 .transport_company li {
-	left: 37px;
 	position: relative;
-	margin-top: 19.5px;
+  left: 37px;
+	margin-top: 20px;
 }
+
+.transport_company li:first-child {
+  position: relative;
+  left: 37px;
+  margin-top: -2px;
+}
+
 
 .transport_company li::before {
 	content: " ";
