@@ -14,7 +14,7 @@
     <header class="header_index">
       <div class="header_top">
         <div class="container">
-          <h1 class="visually-hidden">Каталог Техномарт</h1>
+          <h1 class="visually_hidden">Каталог Техномарт</h1>
 
           <div class="header_logo">
             <a href="index.html">
@@ -23,7 +23,7 @@
           </div>
 
           <form action="#" method="get" class="search">
-            <label for="inp_search" class="visually-hidden">Поиск на сайте:</label>
+            <label for="inp_search" class="visually_hidden">Поиск на сайте:</label>
             <input type="search" placeholder="Поиск:" class="inp_search" id="inp_search">
             <button type="submit" class="btn_search" aria-label="кнопка поиска">
               <svg width="17" height="17" class="icon_search" xmlns="http://www.w3.org/2000/svg">
@@ -108,24 +108,29 @@
         </section>
 
       <div class="wrap_section">
-        <section class="slider_wrap">
-          <h2 class="visually-hidden">Слайдер</h2>
-          <div class="slider">
-            <figure class="slide_1">
-              <img src="img/slide1.jpg" alt="перфораторы">
-              <figcaption class="up_title">Перфораторы</figcaption>
-              <p class="down_title">Настоящие мужские игрушки</p>
-            </figure>
-            <figure class="slide_2">
-              <img src="img/slide2.jpg" alt="дрели">
-              <figcaption class="up_title">Дрели</figcaption>
-              <p class="down_title">Соседям на радость!</p>
-            </figure>
-            <a href="#" class="red link_slider">Открыть каталог</a>
-            <div class="radio_slider">
-              <input type="radio" name="point" value="slide1">
-              <input type="radio" name="point" value="slide2" checked>
+        <section class="slider">
+          <div class="slider_container">
+            <h2 class="visually_hidden">Слайдер</h2>
+            <input class="visually_hidden" type="radio" id="product_1" name="point" >
+            <input class="visually_hidden" type="radio" id="product_2" name="point" checked>
+            <div class="slider_controls">
             </div>
+            <ul class="slider_list">
+              <li class="slider_item">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <button class="btn_pointer right" aria-label="указатель вправо"></button>
+                <button class="btn_pointer left" aria-label="указатель влево"></button>
+                <a class="red link_slider" href="#">Открыть каталог</a>
+              </li>
+              <li class="slider_item">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <button class="btn_pointer right" aria-label="указатель вправо"></button>
+                <button class="btn_pointer left" aria-label="указатель влево"></button>
+                <a class="red link_slider" href="#">Открыть каталог</a>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -147,10 +152,27 @@
 
         <section>
             <div class="popular">
-              <h2 class="title_catalog_section">Популярные товары:</h2>
-              <a href="#" class="red link_red_section">Все популярные товары</a>
+              <h2 class="title_catalog_products">Популярные товары:</h2>
+              <a href="#" class="red link_red_products">Все популярные товары</a>
             </div>
             <ul class="items_list">
+              <li class="index_items_list">
+                <a href="#" class="link_item">
+                  <h3 class="item_list_title">Перфоратор BOSCH BFG 9000</h3>
+                  <p class="catalog_item_image">
+                    <img src="img/perforator3.jpg" width="218" height="170" aria-label="Перфоратор BOSCH BFG 9000" alt="Перфоратор BOSCH BFG 9000">
+                  </p>
+                </a>
+                <p class="price old_price">32500 р.</p>
+                <p class="price new_price">25500 р.</p>
+                <div class="quick_order">
+                  <a class="buy" href="#">
+                    <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><g><path d="M5 15a2 2 0 10-1-3 2 2 0 001 3zM13 15a2 2 0 10-1-3 2 2 0 001 3z"/><path d="M15 2H4V0H0v2h2l2 9h11V9H9l6-2V2z"/></g></svg>
+                    Купить
+                  </a>
+                  <a class="add_bookmarks" href="#">В закладки</a>
+                </div>
+              </li>
               <li class="index_items_list">
                 <a href="#" class="link_item">
                   <h3 class="item_list_title">Перфоратор BOSCH BFG 3000</h3>
@@ -202,31 +224,14 @@
                   <a class="add_bookmarks" href="#">В закладки</a>
                 </div>
               </li>
-              <li class="index_items_list">
-                <a href="#" class="link_item">
-                  <h3 class="item_list_title">Перфоратор BOSCH BFG 3000</h3>
-                  <p class="catalog_item_image">
-                    <img src="img/perforator1.png" width="218" height="170" aria-label="Перфоратор BOSCH BFG 3000" alt="Перфоратор BOSCH BFG 3000">
-                  </p>
-                </a>
-                <p class="price old_price">22500 р.</p>
-                <p class="price new_price">15500 р.</p>
-                <div class="quick_order">
-                  <a class="buy" href="#">
-                    <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"><g><path d="M5 15a2 2 0 10-1-3 2 2 0 001 3zM13 15a2 2 0 10-1-3 2 2 0 001 3z"/><path d="M15 2H4V0H0v2h2l2 9h11V9H9l6-2V2z"/></g></svg>
-                    Купить
-                  </a>
-                  <a class="add_bookmarks" href="#">В закладки</a>
-                </div>
-              </li>
               </ul>
           </section>
 
 
           <section class="popular_brands">
             <div class="popular">
-              <h2 class="title_catalog_section">Популярные производители:</h2>
-              <a href="#" class="red link_red_section">Все производители</a>
+              <h2 class="title_catalog_brands">Популярные производители:</h2>
+              <a href="#" class="red link_red_brands">Все производители</a>
             </div>
               <ul class="brand_list">
                 <li class="brand_item"><a href="#" class="brand_link" aria-label="Bosch"><img src="img/bosch.jpg" alt="бренд Bosch"></a></li>
